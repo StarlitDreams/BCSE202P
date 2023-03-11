@@ -28,13 +28,19 @@ int main()
     }
     int key;
     cin>>key;
+    bool cond=true;
     for(int i=0;i<n;i++)
     {
         if(arr[i]==key)
         {
-            cout<<key<<" is found at index "<<i;
+            cout<<"The element is found at index "<<i;
             break;
         }
     }
+    if(cond==true)
+    {
+        cout<<"Not found"<<endl;
+    }
+    
     return 0;
 }
